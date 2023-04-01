@@ -1,6 +1,6 @@
 {
   "short_name": "note-app",
-  "name": "a sample note taking app made with 👉 react",
+  "name": "note-app",
   "icons": [
     {
       "src": "favicon.ico",
