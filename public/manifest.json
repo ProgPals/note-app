@@ -1,6 +1,6 @@
 {
   "short_name": "note-app",
-  "name": "note-app",
+  "name": "Take Note",
   "icons": [
     {
       "src": "post-it.png",
