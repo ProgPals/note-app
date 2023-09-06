@@ -4,27 +4,17 @@ import NotesList from "./components/NotesList";
 import Search from "./components/Search";
 import Header from "./components/Header";
 
+let currentDate = new Date();
+let formattedDate = currentDate.getDate() + "-" + (currentDate.getMonth() + 1) + "-" + currentDate.getFullYear();
+// console.log(formattedDate); // 7-9-2023
+
+
 const App = () => {
   const [notes, setNotes] = useState([
     {
       id: nanoid(),
-      text: "This is my first note",
-      date: "15/04/2021",
-    },
-    {
-      id: nanoid(),
-      text: "This is my second note",
-      date: "15/04/2021",
-    },
-    {
-      id: nanoid(),
-      text: "This is my third note",
-      date: "15/04/2021",
-    },
-    {
-      id: nanoid(),
-      text: "This is my sample test note",
-      date: "01/04/2023",
+      text: "Let's get started with keep-notes",
+      date: formattedDate,
     },
   ]);
 
