@@ -89,7 +89,7 @@ textarea:focus {
   cursor: pointer;
 }
 
-.search {
+/* .search {
   display: flex;
   align-items: center;
   background-color: rgb(233, 233, 233);
@@ -105,4 +105,37 @@ textarea:focus {
 
 .search input:focus {
   outline: none;
+} */
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2; /* Use a lighter background color */
+  border-radius: 20px; /* Slightly increase border radius for a smoother look */
+  padding: 10px; /* Increase padding for better spacing */
+  width: 300px; /* Adjust the width as needed */
+}
+
+.search-input {
+  flex: 1; /* Allow the input to expand and fill available space */
+  border: none;
+  background-color: transparent; /* Make the input background transparent */
+  outline: none;
+  font-size: 16px; /* Adjust font size as needed */
+  padding: 5px; /* Add some padding to the input */
+}
+
+.search-button {
+  background-color: #007bff; /* Add a contrasting color for the search button */
+  color: #fff; /* Text color for the button */
+  border: none;
+  border-radius: 20px; /* Match the border radius of the search bar */
+  cursor: pointer;
+  padding: 5px 15px; /* Adjust padding as needed */
+  margin-left: 10px; /* Add some spacing between the input and button */
+}
+
+/* Optional: Add a hover effect for the button */
+.search-button:hover {
+  background-color: #0056b3; /* Darker shade on hover */
 }
