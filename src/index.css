@@ -110,32 +110,44 @@ textarea:focus {
 .search-bar {
   display: flex;
   align-items: center;
-  background-color: #f2f2f2; /* Use a lighter background color */
-  border-radius: 20px; /* Slightly increase border radius for a smoother look */
-  padding: 10px; /* Increase padding for better spacing */
-  width: 300px; /* Adjust the width as needed */
+  background-color: #f2f2f2;
+  border-radius: 30px; /* Increase border radius for more rounded corners */
+  padding: 10px;
+  width: 300px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle shadow for depth */
 }
 
 .search-input {
-  flex: 1; /* Allow the input to expand and fill available space */
+  flex: 1;
   border: none;
-  background-color: transparent; /* Make the input background transparent */
+  background-color: transparent;
   outline: none;
-  font-size: 16px; /* Adjust font size as needed */
-  padding: 5px; /* Add some padding to the input */
+  font-size: 16px;
+  padding: 10px; /* Increase padding for better aesthetics */
 }
 
 .search-button {
-  background-color: #007bff; /* Add a contrasting color for the search button */
-  color: #fff; /* Text color for the button */
+  background-color: #007bff;
+  color: #fff;
   border: none;
-  border-radius: 20px; /* Match the border radius of the search bar */
+  border-radius: 30px; /* Match the border radius of the search bar */
   cursor: pointer;
-  padding: 5px 15px; /* Adjust padding as needed */
-  margin-left: 10px; /* Add some spacing between the input and button */
+  padding: 10px 15px; /* Increase padding for a larger button */
+  margin-left: 10px;
+  transition: background-color 0.3s ease; /* Add a smooth transition effect */
 }
 
 /* Optional: Add a hover effect for the button */
 .search-button:hover {
-  background-color: #0056b3; /* Darker shade on hover */
+  background-color: #0056b3;
+}
+
+/* Optional: Style the input placeholder text */
+.search-input::placeholder {
+  color: #888; /* Placeholder text color */
+}
+
+/* Optional: Style the input on focus */
+.search-input:focus {
+  border: 2px solid #007bff; /* Add a border on focus for better visibility */
 }
